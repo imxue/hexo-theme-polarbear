@@ -4,15 +4,14 @@
       <h1 class="post-title">
         {% if is_home() %}
           <a class="post-link" href="{{ url_for(post.path) }}">{{ post.title }}</a>
-              {{ post.subtitle }}
         {% else %}
           {{ post.title }}
         {% endif %}
       </h1>
        {% if is_home() %}
-         <h2>
+         <span>
           {{ post.subtitle }}
-          </h2>
+          </span>
         {% endif %}
         
 
