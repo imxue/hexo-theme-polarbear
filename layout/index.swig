@@ -5,7 +5,7 @@
 {% block title %} {{ config.title }} - {{ config.description }}{% endblock %}
 
 {% block content %}
-    <div id="primary" class="home">
+    <div id="" class="home">
         {% for post in page.posts %}
             {{ post_template.render(post) }}
         {% endfor %}
