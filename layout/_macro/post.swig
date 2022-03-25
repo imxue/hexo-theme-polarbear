@@ -4,11 +4,17 @@
       <h1 class="post-title">
         {% if is_home() %}
           <a class="post-link" href="{{ url_for(post.path) }}">{{ post.title }}</a>
-          {{ post.subtitle }}
+              {{ post.subtitle }}
         {% else %}
           {{ post.title }}
         {% endif %}
       </h1>
+       {% if is_home() %}
+         <h2>
+          {{ post.subtitle }}
+          </h2>
+        {% endif %}
+        
 
       <time class="post-time">
           {{ full_date(post.date, 'MMM DD YYYY') }}
