@@ -3,7 +3,7 @@
 {% block title %} {{ page.title }} - {{ config.title }} {% endblock %}
 
 {% block content %}
-    <div >
+    <div  id="primary">
         <article class="post">
             <header class="post-header">
                 <h1 class="post-title">
