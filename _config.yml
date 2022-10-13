@@ -17,8 +17,8 @@ rss: default
 # Menu Settings
 # ===========================================
 menu:
-  Archives: /archives
-  About: /about
+  归档: /archives
+  关于我: /about
 
 # ===========================================
 # Widget Settings
@@ -31,11 +31,12 @@ menu:
 widget:
   Tags: true
   Categories: false
-  Custom: false
+  Custom: true
+  about: true
 
 widget_custom:
-    title: Test
-    content: <p>testing...</p>
+  title: about
+  content: <p>学而不思则罔，思而不学则怠</p>
 
 # ===========================================
 # Theme Settings
@@ -59,7 +60,6 @@ google_analytics:
 duoshuo_shortname:
 # Disqus
 disqus_shortname:
-
 
 # ===========================================
 # Version
